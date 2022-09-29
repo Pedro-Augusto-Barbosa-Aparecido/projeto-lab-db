@@ -36,6 +36,10 @@ public abstract class ConnectionDB {
 
     }
 
+    protected void execute (String query) throws Exception {
+
+    }
+
     public String getUrlDB() {
         return urlDB;
     }

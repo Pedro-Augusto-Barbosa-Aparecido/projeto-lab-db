@@ -1,9 +1,11 @@
 package com.pedro.DAO.user;
 
 import com.pedro.DAO.ConnectionDB;
-import com.pedro.Models.generic.IBaseModelDAO;
+import com.pedro.DAO.generic.IBaseModelDAO;
+import com.pedro.Models.generic.BaseModel;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class UserDAO extends ConnectionDB implements IBaseModelDAO {
     private Connection con;
@@ -29,22 +31,27 @@ public class UserDAO extends ConnectionDB implements IBaseModelDAO {
     }
 
     @Override
-    public void insert() {
+    public void insert(BaseModel model) {
 
     }
 
     @Override
-    public void delete() {
+    public void delete(int id) {
 
     }
 
     @Override
-    public void update() {
+    public <T> void update(int id, List<String> columns, BaseModel model) {
 
     }
 
     @Override
-    public void findOne() {
+    public BaseModel findOne(int id) {
+        return null;
+    }
+
+    @Override
+    public <T> void findOne(String column, T value) {
 
     }
 
