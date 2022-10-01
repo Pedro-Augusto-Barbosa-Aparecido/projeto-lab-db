@@ -41,7 +41,7 @@ public class UserDAO extends ConnectionDB implements IBaseModelDAO {
     }
 
     @Override
-    public <T> void update(int id, List<String> columns, BaseModel model) {
+    public void update(int id, List<String> columns, BaseModel model) {
 
     }
 
@@ -51,7 +51,7 @@ public class UserDAO extends ConnectionDB implements IBaseModelDAO {
     }
 
     @Override
-    public <T> void findOne(String column, T value) {
+    public void findOne(String column) {
 
     }
 
